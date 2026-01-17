@@ -1,32 +1,228 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>My Website</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: #f5f5f5;
-    }
-    .card {
-      background: white;
-      padding: 24px;
-      border-radius: 8px;
-      text-align: center;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-  </style>
-</head>
-<body>
-  <div class="card">
-    <h1>Hello 👋</h1>
-    <p>Welcome to my website</p>
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.png" />
+    <title>10daer | Software Developer</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <meta
+      name="description"
+      content="10daer is a creative Engineer &amp; Developer helping brands thrive in the digital world. Located in Nigeria. Delivering tailor-made digital designs and building interactive websites from scratch. © Code by 10daer"
+    />
+    <meta property="og:title" content="10daer • Software Developer" />
+    <meta
+      property="og:description"
+      content="10daer is a creative Engineer &amp; Developer helping brands thrive in the digital world. Located in Nigeria. Delivering tailor-made digital designs and building interactive websites from scratch. © Code by 10daer"
+    />
+    <meta
+      property="og:image"
+      content="https://dennissnellenberg.com/media/site/89d468b455-1646837228/meta-image-dennis-snellenberg-860x540-crop-q72.jpg"
+    />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="10daer" />
+    <meta property="og:site_name" content="10daer" />
+    <meta property="og:locale" content="en" />
+    <meta property="og:type" content="website" />
+    <meta property="twitter:title" content="10daer • Freelance Developer" />
+    <meta
+      property="twitter:description"
+      content="10daer is a creative Engineer &amp; Developer helping brands thrive in the digital world. Located in Nigeria. Delivering tailor-made digital designs and building interactive websites from scratch. © Code by 10daer"
+    />
+    <meta
+      property="twitter:image"
+      content="https://dennissnellenberg.com/media/site/89d468b455-1646837228/meta-image-dennis-snellenberg-860x540-crop-q72.jpg"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="google" content="notranslate" />
+    <link
+      rel="preload"
+      href="/assets/fonts/CabinetGrotesk-Variable.ttf"
+      type="font/ttf"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="/assets/fonts/GeneralSans-Variable.ttf"
+      type="font/ttf"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="/assets/fonts/NeueMontreal/NeueMontreal-Bold.otf"
+      type="font/ttf"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="/assets/fonts/NeueMontreal/NeueMontreal-BoldItalic.otf"
+      type="font/ttf"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="/assets/fonts/NeueMontreal/NeueMontreal-Italic.otf"
+      type="font/ttf"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="/assets/fonts/NeueMontreal/NeueMontreal-Light.otf"
+      type="font/ttf"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="/assets/fonts/NeueMontreal/NeueMontreal-LightItalic.otf"
+      type="font/ttf"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="/assets/fonts/NeueMontreal/NeueMontreal-LightItalic.otf"
+      type="font/ttf"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="/assets/fonts/NeueMontreal/NeueMontreal-Medium.otf"
+      type="font/ttf"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="/assets/fonts/NeueMontreal/NeueMontreal-MediumItalic.otf"
+      type="font/ttf"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="/assets/fonts/NeueMontreal/NeueMontreal-Regular.otf"
+      type="font/ttf"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <style>
+      *,
+      *:after,
+      *:before {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+
+      @font-face {
+        font-family: "10daer Sans";
+        src: url("/assets/fonts/CabinetGrotesk-Variable.ttf") format("truetype");
+        font-weight: 100 900;
+        font-display: swap;
+        font-style: normal;
+      }
+
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        -webkit-font-smoothing: antialiased;
+        font-family: "10daer Sans", sans-serif;
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+        cursor: default;
+        box-sizing: border-box;
+        height: 100%;
+      }
+
+      ::-moz-selection,
+      ::-webkit-selection,
+      ::selection {
+        background: #d1d1c7;
+      }
+
+      .preloader {
+        height: 100vh;
+        width: 100vw;
+        display: grid;
+        place-items: center;
+        background-color: #181a1f;
+        position: relative;
+        color: white;
+        font-size: 2.25rem;
+      }
+
+      .preloader span {
+        position: absolute;
+        opacity: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: cycleWords 4s linear infinite;
+        white-space: nowrap;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .preloader span:nth-child(1) {
+        animation-delay: 0.5s;
+      }
+      .preloader span:nth-child(2) {
+        animation-delay: 1s;
+      }
+      .preloader span:nth-child(3) {
+        animation-delay: 1.5s;
+      }
+      .preloader span:nth-child(4) {
+        animation-delay: 2s;
+      }
+      .preloader span:nth-child(5) {
+        animation-delay: 2.5s;
+      }
+      .preloader span:nth-child(6) {
+        animation-delay: 3s;
+      }
+      .preloader span:nth-child(7) {
+        animation-delay: 3.5s;
+      }
+      .words span:nth-child(8) {
+        animation-delay: 3.5s;
+      }
+
+      @keyframes cycleWords {
+        0%,
+        12.5% {
+          opacity: 1;
+        }
+        12.6%,
+        100% {
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="preloader">
+      <span>Hello</span>
+      <span>Bonjour</span>
+      <span>Ciao</span>
+      <span>Olà</span>
+      <span>やあ</span>
+      <span>Hallå</span>
+      <span>Guten tag</span>
+      <span>Hallo</span>
+    </div>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>

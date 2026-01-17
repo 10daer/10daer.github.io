@@ -1,0 +1,28 @@
+<!-- <svg
+        ref={svg}
+        xmlns="http://www.w3.org/2000/svg"
+        className="scale-50 opacity-1"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+      >
+        <path
+          fill="blue"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="1.5"
+          d="M6 19L19 6m0 0v12.48M19 6H6.52"
+        />
+      </svg>
+       -->
+
+       <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="168"
+        height="168"
+        fill="none"
+        viewBox="0 0 168 168"
+      >
+        <circle cx="84" cy="84" r="84" fill="black"/>
+      </svg>
